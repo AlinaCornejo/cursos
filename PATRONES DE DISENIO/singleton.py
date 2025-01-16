@@ -40,6 +40,6 @@ db3.execute_query("INSERT INTO users (name) VALUES ('Leonor')")
 
 print(db1 is db2)
 
-db1.close()
+db1.close() 
 db2.close()
 db3.close()
