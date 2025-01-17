@@ -19,7 +19,7 @@ class DatabaseConnection(Singleton):
 
     def __init__(self):
         if self.connection is None:
-            self.connection = sqlite3.connect("db.sqlite3")
+            self.connection = sqlite3.connect("users.db")
 
     def execute_query(self, query):
         cursor = self.connection.cursor()
@@ -35,7 +35,11 @@ db1.execute_query("CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, nam
 db2 = DatabaseConnection()
 db2.execute_query("INSERT INTO users (name) VALUES ('Alina')")
 
+db3 = DatabaseConnection()
+db3.execute_query("INSERT INTO users (name) VALUES ('Leonor')")
+
 print(db1 is db2)
 
 db1.close()
 db2.close()
+db3.close()
