@@ -12,11 +12,11 @@ class MargheritaBuilder(PizzaBuilder):
     def __init__(self):
         self.pizza = Pizza()
 
-    def set_dough(self, dough):
+    def set_dough(self):
         self.pizza.dough = "Regular"
 
-    def set_sauce(self, sauce):
+    def set_sauce(self):
         self.pizza.sauce = "Tomato"
 
-    def set_topping(self, topping):
+    def set_topping(self):
         self.pizza.topping = "Mozzarella"
