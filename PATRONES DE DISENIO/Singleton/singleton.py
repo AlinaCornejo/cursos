@@ -40,6 +40,12 @@ db3.execute_query("INSERT INTO users (name) VALUES ('Leonor')")
 
 print(db1 is db2)
 
+<<<<<<< HEAD:PATRONES DE DISENIO/Singleton/singleton.py
 db1.close()
 db2.close()
 db3.close()
+=======
+db1.close() 
+db2.close()
+db3.close()
+>>>>>>> 92cc72c0a43f0da16ceccc72fbf15bd6f542c522:PATRONES DE DISENIO/singleton.py
