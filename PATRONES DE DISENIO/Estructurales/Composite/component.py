@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-class Text(ABC): 
+class FileSystemComponent(ABC):
     @abstractmethod
-    def render(self):
+    def show_details(self):
         pass
